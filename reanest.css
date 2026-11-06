@@ -1,11 +1,11 @@
-/* Start: Basic page setup */
+
 body{
     padding: 0;
     margin: 0;
     width: 100%;
 }
 
-/* Start: Navigation bar */
+/* Navigation bar */
 .rnNav {
   position: sticky;
   top: 0;
@@ -305,7 +305,7 @@ body{
   transform: scale(0.96);
 }
 
-/* Mobile menu */
+
 
 .rnMenuBtn {
   display: none;
@@ -436,9 +436,9 @@ body{
   }
 }
 
-/* Start: Hero section */
+/*  Hero section */
 
-/* Hero text and image layout */
+
 
 .hero {
     width: 100%;
@@ -739,7 +739,7 @@ body{
     font-size: 11px;
 }
 
-/* Keep Bootstrap layout and hero assets inside the hero */
+
 
 .hero,
 .hero * {
@@ -792,7 +792,7 @@ body{
     max-width: calc(100vw - 30px);
 }
 
-/* Larger desktop screens: keep the user's desktop composition */
+
 
 @media (min-width: 1400px) {
     .heroImage {
@@ -1112,8 +1112,7 @@ body{
     }
 }
 
-/* Extra room for the unchanged navbar at medium desktop widths.
-   Add this block at the end of the full stylesheet. */
+
 
 @media (min-width: 992px) and (max-width: 1500px) {
     .rnBar {
@@ -1142,7 +1141,8 @@ body{
     }
 }
 
-/* Start: Trust and backing section */
+
+
 .rnTrust {
   width: 100%;
   min-height: 620px;
@@ -1267,7 +1267,8 @@ body{
     font-size: 18px;
   }
 }
-/* Start: Customer reviews section */
+/* Customer reviews section */
+
 .rnReviews,
 .rnReviews * {
   box-sizing: border-box;
@@ -1336,7 +1337,7 @@ body{
   object-fit: cover;
 }
 
-/* Center video card: visible on desktop */
+/* visible on desktop */
 .rnVideoCol {
   display: flex;
   width: 390px;
@@ -1421,7 +1422,7 @@ body{
   color: #dddddd;
 }
 
-/* Responsive layout: two review columns, no center video */
+
 @media (max-width: 950px) {
   .rnReviews {
     flex-wrap: wrap;
@@ -1462,7 +1463,7 @@ body{
   }
 }
 
-/* Smaller screens: keep the two-column cards from your screenshot */
+
 @media (max-width: 650px) {
   .rnReviews {
     flex-direction: row;
@@ -1515,7 +1516,7 @@ body{
   }
 }
 
-/* Very narrow phones */
+
 @media (max-width: 360px) {
   .rnReviews {
     width: 94%;
@@ -1539,7 +1540,7 @@ body{
   }
 }
 
-/* Start: Stacked feature panels section */
+/* Stacked feature panels section */
 
 .rnSlidesSection {
   display: block;
@@ -1549,6 +1550,7 @@ body{
 }
 
 /* Scroll area containing the five cards */
+
 .mother {
   position: relative;
   isolation: isolate;
@@ -1564,7 +1566,7 @@ body{
   display: none;
 }
 
-/* Equal-size cards stick at the top as you scroll */
+
 .mother > div {
   position: sticky;
   top: 0;
@@ -1580,14 +1582,14 @@ body{
   font-family: Arial, sans-serif;
 }
 
-/* Later cards cover earlier cards */
+
+
 .child1 { z-index: 1; }
 .child2 { z-index: 2; }
 .child3 { z-index: 3; }
 .child4 { z-index: 4; }
 .child5 { z-index: 5; }
 
-/* Full-panel background image */
 .panelImage {
   position: absolute;
   inset: 0;
@@ -1598,7 +1600,8 @@ body{
   object-fit: cover;
 }
 
-/* Panel title */
+
+
 .panelLabel {
   position: absolute;
   top: 9%;
@@ -1609,7 +1612,8 @@ body{
   font-weight: 600;
 }
 
-/* Decorative UI images */
+
+
 .panelUi {
   position: absolute;
   z-index: 3;
@@ -1629,7 +1633,8 @@ body{
   width: 18%;
 }
 
-/* Cards panel: Netflix transaction card placement matches the reference */
+
+
 .cardsUi {
   top: 13.75vw;
   left: 26.667vw;
@@ -1643,6 +1648,7 @@ body{
 }
 
 /* Text content */
+
 .panelText {
   position: absolute;
   z-index: 2;
@@ -1750,7 +1756,7 @@ body{
     font-size: 14px;
   }
 }
-/* Start: Raenest for everyone section */
+/* Raenest for everyone section */
 .whoSection,
 .whoSection * {
   box-sizing: border-box;
@@ -1768,7 +1774,7 @@ body{
   font-family: "National 2", Arial, sans-serif;
 }
 
-/* Hide the radio buttons but keep the tabs working */
+
 .whoInput {
   position: absolute;
   width: 1px;
@@ -1777,6 +1783,7 @@ body{
 }
 
 /* Title and tabs */
+
 .whoHeader {
   display: flex;
   align-items: center;
@@ -1852,7 +1859,6 @@ body{
   color: #ffffff;
 }
 
-/* Dark gradient over the bottom of each image */
 .whoCard::after {
   position: absolute;
   inset: 0;
@@ -1895,7 +1901,8 @@ body{
   line-height: 1.6;
 }
 
-/* Clicking a tab brings its card to the main position */
+
+
 #whoTravelers:checked ~ .whoViewport .whoTrack {
   transform: translateX(calc(0px - var(--whoCardWidth) - var(--whoGap)));
 }
@@ -2002,7 +2009,7 @@ body{
     transform: translateX(calc(0px - var(--whoCardWidth) - var(--whoCardWidth) - var(--whoCardWidth) - var(--whoCardWidth) - var(--whoGap) - var(--whoGap) - var(--whoGap) - var(--whoGap)));
   }
 }
-/* Start: Business call-to-action section */
+/* Business call-to-action section */
 .businessSection {
   display: flex;
   width: 90%;
@@ -2091,7 +2098,7 @@ body{
     font-size: 16px;
   }
 }
-/* Start: Your money section */
+/* Your money section */
 .moneySection,
 .moneySection * {
   box-sizing: border-box;
@@ -2139,7 +2146,7 @@ body{
   
 }
 
-/* Image stage */
+
 .moneyVisual {
   position: relative;
   z-index: 1;
@@ -2178,7 +2185,7 @@ body{
   backdrop-filter: blur(10px);
 }
 
-/* Positions matched to the  and pinned to the image */
+
 .accountCard {
   top: 20%;
   right: auto;
@@ -2425,7 +2432,7 @@ body{
     flex-basis: 16px;
   }
 }
-/* Start: Community showcase section */
+
 .serveSection,
 .serveSection * {
   box-sizing: border-box;
@@ -2476,6 +2483,7 @@ body{
 }
 
 /* Three overlapping center images */
+
 .serveStack {
   position: relative;
   flex: 0 0 30%;
@@ -2710,7 +2718,7 @@ body{
     animation: none;
   }
 }
-/* Start: Three steps section */
+/* Three steps section */
 .paidSteps,
 .paidSteps * {
   box-sizing: border-box;
@@ -2861,7 +2869,7 @@ body{
     font-size: 16px;
   }
 }
-/* Start: Latest news and newsletter section */
+/*Latest news and newsletter section */
 .newsSection,
 .newsSection * {
   box-sizing: border-box;
@@ -2961,6 +2969,7 @@ body{
 }
 
 /* Move the purple circle and its arrow together */
+
 .newsCard:hover .newsArrow,
 .newsCard:focus-visible .newsArrow {
   transform: translateX(5px);
@@ -2971,7 +2980,7 @@ body{
   outline-offset: 3px;
 }
 
-/* Newsletter row */
+
 .newsletter {
   display: flex;
   align-items: center;
@@ -3080,7 +3089,7 @@ body{
     width: 100%;
   }
 }
-/* Start: Raenest in the News section */
+/* Raenest in the News section */
 .pressSection,
 .pressSection * {
   box-sizing: border-box;
@@ -3177,7 +3186,7 @@ body{
   }
 }
 
-/* Start: Frequently Asked Questions section */
+/*  Frequently Asked Questions section */
 .faqSection,
 .faqSection * {
   box-sizing: border-box;
@@ -3313,7 +3322,7 @@ body{
   }
 }
 
-/* Start: Raenest footer section */
+/*  Raenest footer section */
 .siteFooter,
 .siteFooter * {
   box-sizing: border-box;
@@ -3470,7 +3479,7 @@ body{
   text-decoration: none;
 }
 
-/* Footer links and icons stay visually unchanged on hover */
+
 .footerLogo,
 .footerLogo:hover,
 .footerColumn > a,
